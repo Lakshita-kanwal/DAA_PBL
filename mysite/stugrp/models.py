@@ -16,7 +16,7 @@ class Student(models.Model):
     ]
 
     RESIDENCE_CHOICES = [
-        ('Hostel', 'Hostel'),
+        ('Hostel', 'Hosteller'),
         ('Day Scholar', 'Day Scholar'),
     ]
 

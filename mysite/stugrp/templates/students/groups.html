@@ -4,12 +4,12 @@
     <title>Student Groups</title>
 </head>
 <body>
-    <h2>Student Groups (4 per group)</h2>
+    <h2>Student Groups (max no. of student is 4)</h2>
     {% for group, students in groups %}
         <h3>{{ group.name }}</h3>
         <ul>
             {% for student in students %}
-                <li>{{ student.name }} ({{ student.email }}) - {{ student.interest }}</li>
+                <li>{{ student.name }} , interest - {{ student.interest }}  ({{student.residence}})</li>
             {% endfor %}
         </ul>
         <hr>
