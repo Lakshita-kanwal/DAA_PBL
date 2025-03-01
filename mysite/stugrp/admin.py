@@ -6,7 +6,7 @@ class StudentAdmin(admin.ModelAdmin):
 
 class StudentGroupAdmin(admin.ModelAdmin):
     list_display = ('name',)
-    filter_horizontal = ('students',)  # Allows easy selection of students in groups
+    filter_horizontal = ('students',)  
 
 admin.site.register(Student, StudentAdmin)
 admin.site.register(StudentGroup, StudentGroupAdmin)

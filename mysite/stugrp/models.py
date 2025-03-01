@@ -32,7 +32,7 @@ class Student(models.Model):
     
 class StudentGroup(models.Model):
     name = models.CharField(max_length=100, unique=True)
-    students = models.ManyToManyField(Student)  # Link students to groups
+    students = models.ManyToManyField(Student)  
 
     def __str__(self):
         return self.name
